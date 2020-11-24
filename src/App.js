@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Navbar from "./components/layout/Navbar";
 
 class App extends Component {
   render() {
@@ -11,6 +12,7 @@ class App extends Component {
     //  method 1(without JSX)
     return (
       <div className="App">
+        <Navbar/>
         <h1> Hello from React</h1>
         {loading ? <h4>LOading----</h4> : <h2> Hello {name.toUpperCase()} {1+4}</h2>}
 
