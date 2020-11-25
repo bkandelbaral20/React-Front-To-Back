@@ -21,17 +21,20 @@ class UserItem extends Component {
         }
 
     render() {
+        //    this.state is repeating on every object so lets create
+        const { login, avatar_url, html_url } = this.state;
+
         return (
             <div className="card text-center">
                 <img
-                    src={this.state.avatar_url}
+                    src={avatar_url}
                     alt="" className="round-img"
                     style={{width: '60px'}}/>
 
-                <h3>{this.state.login}</h3>
+                <h3>{login}</h3>
 
                 <div>
-                    <a href={this.state.html_url} className='btn btn-dark btn-sm my-1'>Click me for more details</a>
+                    <a href={html_url} className='btn btn-dark btn-sm my-1'>Click me for more details</a>
                 </div>
 
             </div>
