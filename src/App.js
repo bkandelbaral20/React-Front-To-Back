@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Navbar from "./components/layout/Navbar";
+import UserItem from "./components/users/UserItem";
 
 class App extends Component {
   render() {
@@ -13,8 +14,9 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar/>
-        <h1> Hello from React</h1>
-        {loading ? <h4>LOading----</h4> : <h2> Hello {name.toUpperCase()} {1+4}</h2>}
+        <UserItem/>
+        {/*<h1> Hello from React</h1>*/}
+        {/*{loading ? <h4>LOading----</h4> : <h2> Hello {name.toUpperCase()} {1+4}</h2>}*/}
 
       </div>
     );
