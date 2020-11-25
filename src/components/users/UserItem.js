@@ -13,16 +13,18 @@ class UserItem extends Component {
     //     }
 
     // components state without constructor, it will display the same information
-        state = {
-            id: 'id',
-            login: 'mojombo',
-            avatar_url: 'https://avatars0.githubusercontent.com/u/1?v=4',
-            html_url: 'https://github.com/mojombo'
-        }
+    //     state = {
+    //         id: 'id',
+    //         login: 'mojombo',
+    //         avatar_url: 'https://avatars0.githubusercontent.com/u/1?v=4',
+    //         html_url: 'https://github.com/mojombo'
+    //     }
 
     render() {
         //    this.state is repeating on every object so lets create
-        const { login, avatar_url, html_url } = this.state;
+        // const { login, avatar_url, html_url } = this.state;
+
+        const { login, avatar_url, html_url } = this.props.user;
 
         return (
             <div className="card text-center">

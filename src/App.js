@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
 import './App.css';
 import Navbar from "./components/layout/Navbar";
-import UserItem from "./components/users/UserItem";
+import Users from "./components/users/UserItem";
 
 class App extends Component {
   render() {
     //creating variables
 
-    const name = 'Binjita Kandel Baral';
-    const loading = true;
+    // const name = 'Binjita Kandel Baral';
+    // const loading = true;
 
     //  method 1(without JSX)
     return (
       <div className="App">
         <Navbar/>
-        <UserItem/>
+        <Users/>
         {/*<h1> Hello from React</h1>*/}
         {/*{loading ? <h4>LOading----</h4> : <h2> Hello {name.toUpperCase()} {1+4}</h2>}*/}
 
